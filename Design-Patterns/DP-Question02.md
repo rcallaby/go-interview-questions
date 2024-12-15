@@ -2,8 +2,6 @@
 
 ## The Observer pattern can have concurrency-related challenges when implemented in Go. How would you design and implement an observer pattern in Go that supports concurrent updates to observers without data races or blocking the main thread? Discuss the potential pitfalls and how to mitigate them.
 
-
-
 Implementing the **Observer pattern** in Go while supporting concurrent updates to observers is a non-trivial problem due to Go's concurrency model. The key challenges include avoiding **data races**, **deadlocks**, and **blocking the main thread**.
 
 Here’s how we can design and implement a thread-safe, non-blocking version of the Observer pattern in Go:
